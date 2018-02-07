@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<footer class="footer" id="footer">
+		<img src="img/3.png" alt="" width="100%">
+		<div class="container">
+			<h1>our Clients say</h1>
+			<div class="info">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+				<img src="img/1.png" alt="">
+
+				<div class="name">
+					<p><b>Pavliv Yaroslav </b>Web designer</p>
+				</div>
+			</div>
+
+			<div class="info1">
+				<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+				<img src="img/2.png" alt="">
+				<div class="name">
+				<p><b>John Scott </b>The Fringe</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="contacts">
+			<h2>CONTACTS</h2>
+			<p>Sign up for our newsletter to receive updates</p>
+			<input type="text" name="" placeholder="Name">
+			<input type="Phone" name="" placeholder="Phone">
+			<input type="email" name="" placeholder="E-mail" class="input">
+			<a href="#">SEND</a>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+   		 	$("#menu").on("click","a", function (event) {
+       	 	event.preventDefault();
+        	var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 800);
+   		 });
+	});
+	</script>
+</body>
+</html>
